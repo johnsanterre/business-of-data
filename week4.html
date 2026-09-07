@@ -1,0 +1,101 @@
+<title>Week 4 &middot; Model risk management</title>
+<link rel="stylesheet" href="course.css">
+
+<header>
+  <div class="wrap">
+    <div class="crest">
+      <a class="uc" href="index.html">Berkeley</a>
+      <span class="prog">The Business of Data</span>
+      <span class="term">Winter 2027</span>
+    </div>
+    <div class="mast-week">
+      <a class="back" href="index.html">&larr; Course home</a>
+      <p class="wknum">Week 4</p>
+      <h1>Model risk management</h1>
+      <p class="role">Function: <b>the chief risk officer</b> &nbsp;&middot;&nbsp; Case: <b>Zillow Offers</b></p>
+    </div>
+<nav class="wknav">
+      <a href="week1.html">1</a>
+      <a href="week2.html">2</a>
+      <a href="week3.html">3</a>
+      <a class="on" href="week4.html">4</a>
+      <a href="week5.html">5</a>
+      <a href="week6.html">6</a>
+      <a href="week7.html">7</a>
+      <a href="week8.html">8</a>
+      <a href="week9.html">9</a>
+      <a href="week10.html">10</a>
+      <a href="week11.html">11</a>
+      <a href="week12.html">12</a>
+      <a href="week13.html">13</a>
+      <a href="week14.html">14</a>
+    </nav>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <p class="intro">Model risk management is the regime that regulated industries apply to models. It separates the people who build a model from the people who validate it, requires documentation of a model's purpose and limitations, and assigns accountability for a model that produces a wrong answer. The frameworks now written for AI systems follow the same structure, and the points where they diverge are informative.</p>
+    <p class="intro" style="margin-bottom:44px">Zillow bought homes directly from sellers at prices set by a valuation model. The model was accurate under the conditions it had been fitted on. When the market moved, its errors were correlated across the whole portfolio rather than independent, and the company was holding the inventory. It closed the business in November 2021 and wrote off approximately half a billion dollars.</p>
+    <p class="label">Asynchronous module &middot; 90 minutes &middot; 6 segments</p>
+    <div class="segs">
+      <div class="item">
+        <div class="t">10 min</div>
+        <div><h4>What counts as a model</h4><p>Whether something is a model determines whether the regime applies to it, and the definition is broader than most practitioners assume. This segment covers the regulatory definition and what falls inside and outside the boundary.</p></div>
+      </div>
+      <div class="item">
+        <div class="t">20 min</div>
+        <div><h4>The three lines of defense</h4><p>The three lines of defense separate the function that owns a risk from the function that oversees it and from the function that audits the oversight. This segment covers what each line does and what happens when one of them is missing.</p></div>
+      </div>
+      <div class="item">
+        <div class="t">20 min</div>
+        <div><h4>Independent validation</h4><p>Validation is only meaningful if the validator can reach a conclusion the business does not want. This segment covers what independence requires structurally, and the common arrangements that defeat it while satisfying the letter of the requirement.</p></div>
+      </div>
+      <div class="item">
+        <div class="t">15 min</div>
+        <div><h4>Governance, documentation, inventory</h4><p>The model inventory is the record of what a firm has deployed and who is accountable for each item. This segment covers what the documentation is expected to contain and what an incomplete inventory indicates about the firm.</p></div>
+      </div>
+      <div class="item">
+        <div class="t">15 min</div>
+        <div><h4>The AI frameworks</h4><p>The frameworks written for AI systems follow the same structure as the banking regime. This segment covers where they align and the gap that opens when a model has neither a documented purpose nor a validation set.</p></div>
+      </div>
+      <div class="item">
+        <div class="t">10 min</div>
+        <div><h4>How the regime fails</h4><p>The regime fails in two recurring ways: the role is unfilled, or it is filled by someone with no authority to stop anything. This segment covers both, with examples from outside the technology sector.</p></div>
+      </div>
+    </div>
+    <div class="segtotal"><span>Total running time</span><b>90 min</b></div>
+    <p class="roleline"><b>Live session roles</b> The chief executive &middot; The pricing-model lead &middot; The risk officer &middot; A local market operations manager</p>
+
+    <h3 style="margin-top:52px">Readings</h3>
+    <ul class="readings">
+      <li><a href="materials/w04/room-packet.html"><b>Case: Zillow Offers</b></a> The narrative runs up to the decision point. Students assigned a role receive a second version that includes the outcome.</li>
+      <li><b>Supervisory Guidance on Model Risk Management (SR 11-7 / OCC 2011-12), 2011</b> Read the sections on model development, validation, and governance.</li>
+      <li><b>NIST AI Risk Management Framework 1.0, 2023</b> Read the selected sections against the 2011 guidance.</li>
+      <li><a href="materials/w04/exhibits.html"><b>Exhibits</b></a> The exhibits cover the Q3 2021 shareholder letter, homes purchased by quarter with realized loss per home, and a comparison with a competitor that remained smaller.</li>
+      <li><a href="materials/w04/research-report.html"><b>Background research: algorithmic pricing in iBuying, 2018 to 2022</b></a> The report compares firms operating the same model, and gives a source for each figure.</li>
+    </ul>
+
+    <div class="why" style="margin:44px 0 0">
+      <h4>Objectives</h4>
+      <ul>
+        <li>State what the supervisory guidance treats as a model, and why the boundary matters.</li>
+        <li>Describe the three lines of defense and the conditions under which validation is independent.</li>
+        <li>Identify what is missing when a general-purpose model is placed under a framework written for a purpose-built one.</li>
+        <li>Evaluate the governance around a deployed model against the framework, and state where accountability sits.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <b>The Business of Data</b> &middot; Week 4 &middot;
+    <a href="week3.html">&larr; Week 3</a> &middot;
+    <a href="index.html">Course home</a> &middot;
+    <a href="week5.html">Week 5 &rarr;</a>
+  </div>
+</footer>
+
+<script data-goatcounter="https://johnsanterre.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>

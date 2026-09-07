@@ -1,0 +1,5 @@
+planning/
+.DS_Store
+*.pyc
+__pycache__/
+materials/w02/audio/01/

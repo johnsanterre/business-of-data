@@ -281,8 +281,8 @@ p.intro{font-size:21px;line-height:1.6;color:var(--ink-2)}
 .ex td.n{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
 .src{font-size:15px;color:var(--ink-3);margin:6px 0 30px}
 
-/* ---- embedded lecture video ---- */
-.vid{margin:0 0 40px}
-.vid video{width:100%;max-width:1000px;display:block;background:#000;border:1px solid var(--rule)}
-.vid .vcap{font-size:15px;color:var(--ink-3);margin-top:10px}
-.vid .vcap a{color:var(--berkeley)}
+/* ---- lecture links inside a segment description ---- */
+a.watch{display:inline-block;margin:6px 10px 0 0;font-size:15px;font-weight:600;
+        text-decoration:none;color:var(--berkeley);border:1px solid var(--rule);
+        border-radius:3px;padding:4px 12px;background:var(--card)}
+a.watch:hover{border-color:var(--berkeley)}

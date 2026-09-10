@@ -70,7 +70,7 @@ def rewrite(week, record):
     anchor = '    <div class="segs">'
     if anchor not in page:
         sys.exit(f"week {week}: no segment list found, cannot place the embed")
-    block = EMBED.format(vid=vid, title=f"The Business of Data, week {week}",
+    block = EMBED.format(vid=vid, title=f"Finance, Law, and Risk in the AI Product Lifecycle, week {week}",
                          mins=round(record["seconds"] / 60), n=len(offsets))
     page = page.replace(anchor, block + anchor, 1)
 

@@ -29,7 +29,13 @@ header{background:var(--berkeley);color:#fff}
 .crest .prog{font-size:13.8px;letter-spacing:.17em;text-transform:uppercase;
              color:var(--gold);font-weight:600}
 .crest .term{margin-left:auto;font-size:13.8px;letter-spacing:.13em;text-transform:uppercase;
-             color:rgba(255,255,255,.62)}
+             color:rgba(255,255,255,.62);white-space:nowrap}
+/* the long course title forces the crest to wrap on narrow screens */
+@media(max-width:640px){
+  .crest{flex-wrap:wrap;row-gap:4px}
+  .crest .prog{flex-basis:100%;order:3}
+  .crest .term{margin-left:auto}
+}
 .mast{padding:34px 0 40px}
 h1{font-family:var(--serif);font-size:clamp(40px,5vw,62.5px);line-height:1.06;
    margin:0 0 14px;font-weight:600;letter-spacing:-.015em}

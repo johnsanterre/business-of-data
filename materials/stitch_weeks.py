@@ -71,7 +71,7 @@ def title_card(wk, n, module, dek, out_png):
     .d{{font-size:44px;color:#3d3d3d;max-width:1400px;line-height:1.35}}
     .f{{position:absolute;bottom:70px;left:130px;font-size:30px;color:#7a7a7a}}
     </style>
-    <div class="k">The Business of Data &middot; Week {n}</div>
+    <div class="k">Finance, Law, and Risk in the AI Product Lifecycle &middot; Week {n}</div>
     <h1>{html.escape(module)}</h1>
     <div class="d">{html.escape(dek)}</div>
     <div class="f">Berkeley &middot; Winter 2027</div>"""

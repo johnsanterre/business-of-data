@@ -1,4 +1,4 @@
-# The Business of Data
+# Finance, Law, and Risk in the AI Product Lifecycle
 
 A graduate course on the financial, legal, and organizational decisions that
 determine whether a model becomes a product. Taught by case study rather than

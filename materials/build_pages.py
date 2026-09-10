@@ -39,7 +39,7 @@ def crest(from_dir, week, kicker, title, role):
   <div class="wrap">
     <div class="crest">
       <a class="uc" href="{up}index.html">Berkeley</a>
-      <span class="prog">The Business of Data</span>
+      <span class="prog">Finance, Law, and Risk in the AI Product Lifecycle</span>
       <span class="term">{TERM}</span>
     </div>
     <div class="mast-week">
@@ -87,7 +87,7 @@ def build_script_page(wk, module, total, num, stem, title):
     o += ["  </div>\n</section>\n", f"""
 <footer>
   <div class="wrap">
-    <b>The Business of Data</b> &middot; Week {week} &middot;
+    <b>Finance, Law, and Risk in the AI Product Lifecycle</b> &middot; Week {week} &middot;
     <a href="{up}week{week}.html">Back to week {week}</a> &middot;
     <a href="../{stem}.mp4">Video</a> &middot;
     <a href="../audio/{stem}.m4a">Audio</a> &middot;
@@ -127,7 +127,7 @@ def build_slides_page(wk, module, total, num, stem, title):
     o += ["    </div>\n  </div>\n</section>\n", f"""
 <footer>
   <div class="wrap">
-    <b>The Business of Data</b> &middot; Week {week} &middot;
+    <b>Finance, Law, and Risk in the AI Product Lifecycle</b> &middot; Week {week} &middot;
     <a href="{up}week{week}.html">Back to week {week}</a> &middot;
     <a href="../../{stem}.mp4">Video</a> &middot;
     <a href="../../audio/{stem}.m4a">Audio</a> &middot;

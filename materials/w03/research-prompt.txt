@@ -1,0 +1,179 @@
+Produce an extensive, source-cited case study of Stability AI suitable for
+teaching in a graduate business course, set against the other companies that
+adopted the same open-weights posture. The teaching question is how a company
+can be worth more than it owes and still fail: because its funding matures
+sooner than the obligations it supports, because its assets cannot be turned
+into cash on the timescale its creditors require, and because exposures that
+look spread across many parties turn out to respond to a single event. Freeze
+the narrative at the resignation of Emad Mostaque as chief executive on 22 March
+2024. Material after that date belongs in a clearly separated final section.
+
+Stability AI is a private company, and that changes what evidence exists. There
+is no registration statement, no quarterly reporting, and no audited disclosure
+of the kind a listed company must produce. Work first from the documents that do
+exist. Those are the statutory filings of Stability AI Ltd and any associated
+entity at Companies House in the United Kingdom, including annual accounts and
+the notes to them, confirmation statements, statements of capital, share
+allotment returns, the register of charges, and the appointment and termination
+of directors; and the pleadings, exhibits, declarations, expert reports and
+judgments in the litigation to which the company is a party. Give the company
+number, the filing date, and the document type for anything drawn from Companies
+House. A statutory account is a document. A press report describing a document
+is not the same thing. A report quoting an internal deck the outlet obtained is
+a third thing again, and it is the category most of this record falls into.
+
+Mark every material claim with one of four labels, and use them consistently
+rather than only where they are convenient.
+
+  FILED           It appears in a statutory filing or a court document. Name
+                  the document and the date.
+  REPORTED        A named outlet, a named journalist, and a date. Give all
+                  three. If the outlet says it obtained internal documents,
+                  say so, and say whether the documents were published.
+  ASSERTED        A party to a dispute, a former employee, or the company
+                  itself says it. Attribute it and note the speaker's interest.
+  NOT ESTABLISHED It circulates without a traceable source.
+
+Where a figure is disputed, give both figures and say who asserts each. Where
+something is not disclosed, say that it is not disclosed rather than estimating
+around the gap. Throughout, separate what a person outside the company could
+have known on a given date from what became knowable only later. That
+separation is the point of the exercise, so date the availability of every
+significant fact, not only the fact itself.
+
+Several figures recur in the reporting on this company. Treat each as a lead to
+be established rather than as a fact: check it against a filing or against the
+original reporting, give the source and the date, and say plainly if it is
+unsupported, misquoted, or wrong. This applies to the revenue and expense
+figures for 2023, the amount owed under the compute contracts, the size and
+terms of the October 2022 round, and the valuation.
+
+Cover the following.
+
+1. Formation, entities, and ownership. The founding, the date, and the corporate
+   structure: the United Kingdom entity, any United States entity, and how they
+   relate. Directors and officers with their appointment and termination dates
+   from the statutory record. The share classes, the allotments, and what the
+   capital structure looked like at each raise. The dispute over founding
+   equity, what each side claimed, and how it resolved. Where the founding
+   narrative the company told publicly differs from what the filings and the
+   litigation show, set the two side by side.
+
+2. What the company released, and who built it. Stable Diffusion 1.x, 2.x, SDXL,
+   SD3, and the audio and language models. For each, establish who did the
+   research, which institution employed them, who supplied the training data,
+   who supplied the compute, and who held whatever rights existed. Distinguish
+   what Stability built from what Stability funded, convened, or hosted. This
+   distinction is load-bearing for the case: a company can be the reason
+   something happened without owning the thing that happened.
+
+3. The financial record. Revenue by year and, if the record permits, by line of
+   business. Cost of revenue. Compute spend. Personnel cost and headcount over
+   time. Cash held at each date the record gives one. Monthly burn. Losses.
+   Take everything possible from the Companies House accounts, quoting the note
+   where the figure appears; label everything else REPORTED with the outlet and
+   the date. State explicitly which of these figures were never disclosed in any
+   form, and which appeared only through documents an outlet obtained.
+
+4. The funding stack, instrument by instrument. Every raise: the date, the
+   amount, the instrument, the pre-money and post-money valuation, the lead
+   investor, and the other participants. Distinguish priced equity from
+   convertible notes and from simple agreements for future equity. For every
+   convertible instrument, give the maturity date, the conversion trigger, the
+   discount, the cap, and any liquidation preference, to the extent the record
+   discloses them. Note where terms are not disclosed, which will be often. The
+   maturity profile of the funding is the first half of the duration question,
+   so assemble it as a timeline rather than as a list.
+
+5. The compute contracts and the obligations they created. Every arrangement
+   with a compute supplier by name: the counterparty, the date, the size, the
+   term, whether it carried a minimum commitment or a take-or-pay provision,
+   and what was owed and when. Establish what was disputed, what went unpaid,
+   and what was renegotiated. Then set the tenor of these commitments against
+   the tenor of the funding assembled in section four, and state the mismatch in
+   months. Include any lease, hardware purchase, or hosting commitment that
+   functions as a liability. Note where an obligation would not appear as debt
+   on a balance sheet.
+
+6. The runway calculation, reconstructed at several dates. Choose at least four
+   dates between the first large raise and the freeze date. At each one, state
+   cash on hand, monthly burn, and months of runway remaining, showing the
+   arithmetic and naming the source of every input. Then say which of the three
+   inputs is least well supported at that date, and what the calculation assumes
+   about the availability of the next round. Where the inputs do not exist for a
+   date, say so and give the nearest date where they do.
+
+7. Concentration, in four forms. Revenue concentration by customer, to the
+   extent the record shows it. Investor concentration, and whether the parties
+   funding successive rounds were independent of one another or responsive to
+   the same signals. Supplier concentration in compute. Key-person concentration
+   in the chief executive, including how much of the fundraising, the public
+   profile, and the counterparty relationships ran through one individual. For
+   each, state what would have to happen for the exposure to move as a single
+   position rather than as several.
+
+8. The departures, examined as a run. Assemble a dated sequence of the
+   researcher and executive exits: the authors of the diffusion work, the
+   finance and operating executives, the board members, and the chief executive.
+   For each, give the date, the destination where known, and the stated reason.
+   Then establish the order: did the exits precede the public reporting on the
+   company's finances, follow it, or interleave with it. Determine whether the
+   people leaving were the ones who could see the numbers. A run is a
+   coordination problem in which acting becomes rational for each party once it
+   becomes likely that others will act, so test whether that structure fits what
+   happened here, and say where it does not fit.
+
+9. Warning indicators, and who held them. Establish who inside the company could
+   see the burn and the runway at each stage, when the board was told, what the
+   board did, and what the company said publicly in the same weeks. Identify any
+   point where a person who could see the problem had no authority to act on it,
+   and any point where a person with authority was not shown the numbers.
+   Distinguish what was concealed from what was disclosed to a small group from
+   what was simply not calculated.
+
+10. Open-weights companies: funding raised against revenue. This is the
+    comparative core of the report, and the reading it supports is named for it.
+    Cover Stability AI, Mistral AI, Hugging Face, Black Forest Labs, Runway,
+    Midjourney, Cohere, and Meta's Llama programme, adding any other company
+    that adopted a comparable release posture. For each, give total capital
+    raised with dates, the most recent reported valuation, reported revenue with
+    its date and source, headcount, the monetisation route actually used, and
+    the compute posture, meaning owned, leased, committed, or provided by a
+    partner. Midjourney and Meta are the two ends of the range and both belong
+    in the table: one reached the same market with no outside capital, and the
+    other released weights while selling nothing, funded by an unrelated
+    business. Present this as a table, and follow it with an analysis of which
+    of these companies faced the same duration mismatch and which did not, and
+    what structural feature explains the difference. Where a private company's
+    revenue is not established, say so in the table rather than carrying an
+    estimate into the comparison.
+
+11. The bear case as it stood in early 2024, constructed only from what was
+    knowable then. State which assumptions in the company's plan carried the
+    most weight with the least support, what would have falsified each one, and
+    what an investor, a compute supplier, and a staff researcher could each have
+    observed from their own position. Keep this section strictly inside the
+    information available before 22 March 2024.
+
+12. A separate final section, clearly labelled as after the decision point. The
+    change in control and the recapitalisation, the terms to the extent
+    disclosed, the new leadership and board, the treatment of existing
+    investors, the restructuring and any change in headcount, the resolution or
+    continuation of the compute obligations, the outcome of the litigation in
+    each jurisdiction, subsequent filings at Companies House including later
+    accounts, and the position of the company at the time of writing. Also
+    record what happened to the researchers who left and to the companies they
+    founded.
+
+Deliver as a structured report with numbered sections. Include a table of every
+quantitative claim carrying its source, its date, and its label from the four
+above. Include a timeline table of funding instruments showing amount, date,
+instrument type, and maturity or conversion trigger where known, so the funding
+profile can be read against the obligation profile. Include the comparative
+table from section ten. Include a bibliography with full citations, separating
+statutory and court documents from journalism from company statements.
+
+Close with two short lists. First, the places where the public record is thin
+enough that a reader should not rely on it. Second, the questions this record
+cannot answer at all, and what document would be required to answer each. For a
+private company the second list is part of the finding, not an apology for it.

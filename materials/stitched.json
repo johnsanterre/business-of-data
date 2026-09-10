@@ -1,0 +1,63 @@
+[
+  {
+    "week": 1,
+    "module": "Introduction",
+    "dek": "The twelve functions, the gates a release passes, and three shapes of failure",
+    "file": "/Users/john/Dropbox/_/Retrospective/the-business-of-data/materials/w01/week-1-full.mp4",
+    "seconds": 5113.10319,
+    "chapters": [
+      "0:00 What this course covers",
+      "9:53 The money functions",
+      "23:47 The risk functions",
+      "37:46 The build functions",
+      "51:51 The external functions",
+      "1:06:18 How a release happens",
+      "1:15:26 Patterns in business failure"
+    ]
+  },
+  {
+    "week": 2,
+    "module": "How an asset is carried",
+    "dek": "Depreciation as a judgment, and what follows from the number on the books",
+    "file": "/Users/john/Dropbox/_/Retrospective/the-business-of-data/materials/w02/week-2-full.mp4",
+    "seconds": 5142.915521,
+    "chapters": [
+      "0:00 What an asset is worth",
+      "15:26 Depreciation as a judgment",
+      "35:19 The classification choice",
+      "49:13 Financing the asset",
+      "1:08:02 Reading the filing",
+      "1:17:12 Carrying value against market value"
+    ]
+  },
+  {
+    "week": 3,
+    "module": "Liquidity, duration, concentration",
+    "dek": "Why a firm worth more than it owes still fails",
+    "file": "/Users/john/Dropbox/_/Retrospective/the-business-of-data/materials/w03/week-3-full.mp4",
+    "seconds": 5521.082357,
+    "chapters": [
+      "0:00 Solvency and liquidity",
+      "16:36 Duration",
+      "36:58 Runway, burn, and the raise cycle",
+      "51:54 Concentration",
+      "1:11:28 The mechanics of a run",
+      "1:21:50 Warning indicators"
+    ]
+  },
+  {
+    "week": 4,
+    "module": "Model risk management",
+    "dek": "The regime, and the two ways it fails in practice",
+    "file": "/Users/john/Dropbox/_/Retrospective/the-business-of-data/materials/w04/week-4-full.mp4",
+    "seconds": 4811.031185,
+    "chapters": [
+      "0:00 What counts as a model",
+      "9:14 The three lines of defense",
+      "27:29 Independent validation",
+      "44:59 Governance, documentation, inventory",
+      "58:34 The AI frameworks",
+      "1:11:17 How the regime fails"
+    ]
+  }
+]

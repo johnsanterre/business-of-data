@@ -1,0 +1,181 @@
+<title>Reference: liquidity, solvency, and runway</title>
+<link rel="stylesheet" href="../../course.css">
+
+<header>
+  <div class="wrap">
+    <div class="crest">
+      <a class="uc" href="../../index.html">Berkeley</a>
+      <span class="prog">The Business of Data</span>
+      <span class="term">Winter 2027</span>
+    </div>
+    <div class="mast-week">
+      <a class="back" href="../../week3.html">&larr; Week 3</a>
+      <p class="wknum">Reference note</p>
+      <h1>Liquidity, solvency, and runway</h1>
+      <p class="role">The definitions and the standard calculations, in one place.</p>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap doc">
+    <h2>Two tests, on different clocks</h2>
+    <p><b>Solvency</b> asks whether everything a firm owns is worth more than everything it
+      owes. No deadline attaches to the question. It is answered by a valuation, it covers
+      the whole balance sheet, and it is an opinion about the future, because most of what a
+      lender owns is a promise that somebody else will pay later.</p>
+    <p><b>Liquidity</b> asks whether the cash available on a particular day is at least the
+      cash demanded on that day. It is answered by a calendar rather than a valuation, it
+      covers only the near term, and it is a fact rather than an opinion, because by close
+      of business the payment either cleared or it did not.</p>
+    <p>A firm can fail either test independently of the other. The two failures have
+      different causes, different cures, and speeds that differ by orders of magnitude.
+      Insolvency is cured by new capital, by retained earnings, or by creditors agreeing to
+      take less, each of which takes months at minimum. Illiquidity is cured within hours by
+      a credit line, a lender of last resort, or an asset sale, and if none of the three is
+      available on the day the money is due there is no fourth option.</p>
+    <p>The forced sale connects them. Selling under time pressure means selling at a
+      discount, the discount is a realised loss, and enough of it converts a solvent firm
+      into an insolvent one. The conversion runs in one direction: illiquidity can
+      manufacture insolvency in a fortnight, and insolvency can sit for years without
+      manufacturing anything.</p>
+
+    <h2>Duration</h2>
+    <p>Duration is the average time until a holder receives their money, weighting each
+      payment by the share of present value it carries. For a loan paying interest annually
+      and returning principal at maturity, duration is a little less than the term, and the
+      lower the coupon the closer it gets to the term itself.</p>
+    <p><b>Macaulay duration</b> is that weighted average, expressed in years. <b>Modified
+      duration</b> divides it by one plus the yield and is used as a price sensitivity: the
+      percentage fall in price for a one percentage point rise in rates.</p>
+    <p>The estimate is systematically wrong in a known direction. For an ordinary loan it
+      overstates the loss when rates rise and understates the gain when they fall, and the
+      error grows with the size of the shock. That curvature is <b>convexity</b>, and it
+      makes duration a reliable early warning and an unreliable precise forecast.</p>
+    <p>The <b>duration gap</b> is asset duration less liability duration. A gap of eight
+      years means the firm has promised to return tomorrow money it has lent out for eight
+      years. That is not a distortion of lending, it is the service being provided, and the
+      firm is paid for carrying it.</p>
+
+    <h3>Worked</h3>
+    <p>A ten-year loan of one hundred, paying a five per cent annual coupon with principal at
+      maturity, priced to yield five per cent.</p>
+    <ul class="readings">
+      <li>Price <b>100.00</b>, Macaulay duration <b>8.11</b> years, modified duration <b>7.72</b></li>
+      <li>Rates rise two points: duration predicts &minus;15.4 per cent, the exact price is
+        85.95, a fall of <b>&minus;14.0</b> per cent</li>
+      <li>Rates rise three points: duration predicts &minus;23.2 per cent, the exact price is
+        79.87, a fall of <b>&minus;20.1</b> per cent</li>
+      <li>Funded by demand deposits, duration about 0.003 years, the gap is <b>8.10</b> years</li>
+    </ul>
+
+    <h2>Deposit beta and behavioural life</h2>
+    <p>Contractually a demand deposit has a duration of about one day. Behaviourally, deposit
+      balances are far stickier, so firms assign a modelled behavioural life, commonly three
+      or four years. Using the contractual figure would overstate the risk so severely that
+      the firm could not operate, so the modelling is not a dodge.</p>
+    <p><b>Deposit beta</b> is the fraction of a rise in market rates that must be passed on to
+      retain the balances. A beta of three tenths means a two point rise costs six tenths of
+      a point in funding.</p>
+    <p>Two properties of the parameter matter more than its value. It is the only quantity in
+      the calculation estimated from history rather than read off a contract. And it is not a
+      constant but a function of the alternative available to the depositor, close to flat
+      while no alternative exists and close to vertical once one does. A beta fitted across a
+      period of near-zero rates was fitted where the parameter was never tested.</p>
+
+    <h2>Runway</h2>
+    <p><b>Gross burn</b> is total cash out. <b>Net burn</b> is gross burn less cash in.
+      <b>Runway</b> is unrestricted cash divided by net burn, expressed in months.</p>
+    <p>That figure is a <b>cash-out date</b>. The date a firm needs is its <b>decision
+      date</b>, which is the cash-out date less the time required to change the situation. A
+      financing runs about seven months from first serious conversation to money received, so
+      a firm with 10.7 months of runway has a decision date at month 3.7 and roughly a third
+      of the stated runway available for deciding anything.</p>
+    <p>Three assumptions sit inside the single number, and they are listed here in order of
+      how much control the firm has over each.</p>
+    <ul class="readings">
+      <li><b>Burn holds.</b> It is the output of commitments made three to six months
+        earlier, so reducing it takes about as long as creating it did, and a cut produces
+        redundancy cost immediately against a saving that arrives later.</li>
+      <li><b>Revenue arrives.</b> Revenue enters through the denominator, so a small revenue
+        line attached to a large burn has an outsized effect on the date.</li>
+      <li><b>A next round exists.</b> A property of the outside world, which no amount of
+        good execution makes true.</li>
+    </ul>
+    <p>The three are positively correlated, so stressing one at a time understates the risk.
+      Compute the runway from unconditional cash alone, and show conditional money as a
+      separate line carrying the date each condition is tested. A committed facility with
+      conditions precedent binds when the firm needs it and is satisfied comfortably when it
+      does not.</p>
+
+    <h3>Worked</h3>
+    <p>Cash of 48 million, gross burn 6.0 a month, revenue 1.5 a month.</p>
+    <ul class="readings">
+      <li>Net burn <b>4.5</b> a month, runway <b>10.7</b> months</li>
+      <li>Decision date month <b>3.7</b>, which is <b>34 per cent</b> of the stated figure</li>
+      <li>Gross burn twenty per cent over plan: runway <b>8.4</b> months, 2.2 months lost</li>
+      <li>Revenue to zero: runway <b>8.0</b> months, 2.7 months lost</li>
+    </ul>
+
+    <h2>Concentration</h2>
+    <p>The <b>Herfindahl index</b> is the sum of squared exposure shares. Its reciprocal is
+      the number of equal-sized exposures that would produce the same index, and is reported
+      as the effective number of names. It measures the distribution of sizes, and does that
+      correctly.</p>
+    <p>Diversification works because independent outcomes cancel, so the count of exposures
+      is only half of what determines whether a book moves as one thing. For N equal
+      exposures with common pairwise correlation rho, the variance of the average is the
+      individual variance multiplied by the quantity rho plus one minus rho over N. The
+      second term is the diversification being bought and falls away as N grows. The first
+      term contains no N. Risk falls toward rho and no further.</p>
+    <p>Setting that equal to the independent case gives an <b>effective independent count</b>
+      of one divided by the same bracket, directly comparable to the reciprocal Herfindahl
+      figure.</p>
+
+    <h3>Worked</h3>
+    <p>A book of four hundred equal loans.</p>
+    <ul class="readings">
+      <li>rho = 0 &rarr; <b>400</b> effective loans, matching Herfindahl exactly</li>
+      <li>rho = 0.05 &rarr; <b>19.1</b></li>
+      <li>rho = 0.10 &rarr; <b>9.8</b></li>
+      <li>rho = 0.25 &rarr; <b>3.97</b>, against a Herfindahl reading of 400 for the same book</li>
+      <li>A five-loan book of 40, 25, 15, 10, 10 per cent scores <b>3.8</b> on Herfindahl</li>
+    </ul>
+    <p>Stated as volatility, four hundred independent loans swing five per cent as much as a
+      single borrower. At correlation of a quarter the same book swings 50.2 per cent as
+      much, which is ten times the volatility of the book a size-based measure describes.</p>
+    <p>Correlation is estimated rather than observed, and it is estimated from history. In
+      calm periods the linking mechanism is dormant and the measured figure is low, so the
+      estimate is at its most reassuring when it is least reliable. This is the same
+      structural problem as deposit beta.</p>
+
+    <h2>What each measure cannot see</h2>
+    <ul class="readings">
+      <li><b>A solvency test</b> compares two figures at an instant and has no time axis, so
+        it cannot show a duration gap however often it is run.</li>
+      <li><b>Herfindahl</b> takes sizes as its input and has nowhere to record a common
+        cause, so two books with the same effective exposure can differ by a factor of a
+        hundred in the report.</li>
+      <li><b>Large exposure limits</b> are written per counterparty, and the connected-client
+        rules that extend them cover ownership, control, and guarantees. Those are legal
+        relationships. A shared city, a shared dominant employer, and a shared refinancing
+        market are not among them.</li>
+      <li><b>A runway figure</b> answers when the cash reaches zero, and unless somebody
+        performs the subtraction the month the firm's options close does not appear.</li>
+    </ul>
+
+    <div class="prov" style="margin-top:36px">Every figure in the worked sections is computed
+      in <code>materials/w03/scripts/w03-numbers.py</code>, with the output preserved in
+      <code>w03-numbers.txt</code>.</div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <b>The Business of Data</b> &middot; Week 3 &middot;
+    <a href="../../week3.html">Back to week 3</a>
+  </div>
+</footer>
+
+<script data-goatcounter="https://johnsanterre.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>

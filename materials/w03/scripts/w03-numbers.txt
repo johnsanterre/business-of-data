@@ -1,0 +1,62 @@
+==================================================================
+SEGMENT 2 — DURATION
+==================================================================
+Ten-year bullet loan, five per cent annual coupon, priced at par yield 5%
+  price                  100.00
+  Macaulay duration        8.11 years
+  modified duration        7.72
+  rates +2%: price  85.95  actual -14.0%  duration estimate -15.4%
+  rates +3%: price  79.87  actual -20.1%  duration estimate -23.2%
+
+Liability side
+  demand deposit, repayable tomorrow: duration ~0.003 years (about one day)
+  duration gap for a book of these loans funded by deposits: 8.10 years
+
+  A 940m book of these loans, rates +2%:
+    market value falls to      808.0m  (loss 132.0m)
+    against liabilities of     800.0m
+    equity                       8.0m  (was 140.0m)
+
+  A 940m book of these loans, rates +3%:
+    market value falls to      750.8m  (loss 189.2m)
+    against liabilities of     800.0m
+    equity                     -49.2m  (was 140.0m)
+
+==================================================================
+SEGMENT 3 — RUNWAY
+==================================================================
+cash 48m, gross burn 6.0m/mo, revenue 1.5m/mo
+  net burn        4.5m per month
+  stated runway   10.7 months
+  a raise takes   7 months from first meeting to money in
+  decision date   month 3.7, not month 10.7
+  usable runway   3.7 months, 34% of the number on the slide
+  gross burn +10%: net 5.10m/mo, runway 9.4 months (1.3 months lost)
+  gross burn +20%: net 5.70m/mo, runway 8.4 months (2.2 months lost)
+  revenue goes to zero: runway 8.0 months (2.7 months lost)
+
+==================================================================
+SEGMENT 4 — CONCENTRATION
+==================================================================
+A book of 400 equal loans. Diversification depends on correlation, not count.
+  pairwise correlation 0.00 -> behaves like  400.00 independent loans
+  pairwise correlation 0.05 -> behaves like   19.09 independent loans
+  pairwise correlation 0.10 -> behaves like    9.78 independent loans
+  pairwise correlation 0.25 -> behaves like    3.97 independent loans
+  pairwise correlation 0.50 -> behaves like    2.00 independent loans
+
+The floor, stated as volatility rather than as a count.
+sd of the book average, as a fraction of one loan's sd:
+  correlation 0.00 ->  0.050  (  5.0 per cent of a single loan)
+  correlation 0.05 ->  0.229  ( 22.9 per cent of a single loan)
+  correlation 0.10 ->  0.320  ( 32.0 per cent of a single loan)
+  correlation 0.25 ->  0.502  ( 50.2 per cent of a single loan)
+  the 0.25 book is 10.0 times as volatile as the independent book of the same size
+
+Herfindahl on an unequal book (share of total exposure):
+  looks concentrated: H = 0.2650, effective names =    3.8
+  looks diversified : H = 0.0025, effective names =  400.0
+
+  The 400-name book scores 400 effective names on Herfindahl,
+  which counts only size. At correlation 0.25 it behaves like 4.0.
+  Herfindahl sees the size distribution and is blind to the common cause.

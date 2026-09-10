@@ -1,0 +1,91 @@
+---
+title: The AI frameworks
+series: business-of-data
+week: 4
+module: Model risk management
+section: 5
+target_seconds: 900
+model: "seconds = words/3.68 + paragraphs * 4.27"
+register: narrator, professional adult audience
+audience_note: "MIDS working professionals. Several will have been asked to implement one of these."
+method_note: >
+  The frameworks are introduced as the same structure on the same bones, so that the
+  divergence lands as a specific gap rather than as a general complaint. The gap is
+  built in two halves, the missing purpose and the missing validation set, each shown
+  to break a named control from the earlier segments. Closes on the provider and
+  deployer split, which is where accountability actually goes missing.
+constraint: "Must not reference the week's case. Running example is aviation software certification."
+status: draft 2026-09-09
+---
+
+## Script
+
+[P1] The frameworks written for artificial intelligence are recognisably the same animal as the banking regime, and the first thing to say about them is that this is a feature rather than a lack of imagination. The problems are the same problems. A system produces an estimate, somebody acts on it, and the estimate can be wrong in ways nobody anticipated.
+
+[P2] Take the structure most commonly used, which organises the work into four functions. Govern, which establishes accountability, policies, and culture. Map, which establishes context: what the system is for, who is affected, and what could go wrong. Measure, which assesses and tracks the identified risks. And manage, which allocates resources against them and decides what to do.
+
+[P3] Line that up against what we have covered. Govern is the governance component: roles, committees, appetite. Map is the scoping and documentation of intended use. Measure is validation and ongoing monitoring. Manage is the acceptance, the compensating control, and the decision with a name against it. Different vocabulary, same skeleton.
+
+[P4] The framework is also voluntary, which changes its character. Supervisory guidance in banking is enforced by an examiner who arrives, and a firm that ignores it faces consequences. A voluntary framework is adopted because a customer requires it, because it is a defensible position later, or because somebody inside the firm wanted a structure to point at. That difference in enforcement shows up in the depth of implementation.
+
+[P5] There are two additions worth noting because the banking regime handles them thinly. The first is that harms to people outside the firm are treated as first-class risks rather than as a subset of reputational risk. The second is that the frameworks take the whole lifecycle seriously, including decommissioning, which model governance in banking has always been weak on.
+
+[P6] Now the divergence, and it is not a difference in quality. It is a structural problem that the banking regime never had to solve because its models did not have this shape.
+
+[P7] The first half of the gap is purpose. A bank's model has one. It estimates the probability that this applicant defaults within twelve months. That sentence is the anchor for every control we have discussed. Validation assesses fitness for that purpose. Documentation states the conditions under which the estimates hold. The inventory records that use. Change control fires when the use changes.
+
+[P8] A general-purpose model has no such sentence, and this is not an oversight. It is the product. The system is valuable precisely because it was not built for a specific task, and a firm deploys it for forty tasks that nobody enumerated in advance, some of which are invented by users after deployment.
+
+[P9] Work through what that breaks. Validation assesses fitness for intended use, and if the intended use is anything a user types, then fitness cannot be assessed, only sampled. Documentation states the conditions under which estimates are reliable, and the conditions are the whole space of possible inputs. The inventory records what the model is for, and the honest entry is a shrug.
+
+[P10] The second half of the gap is the validation set. A bank's model has one: a held-out sample from the same population, with known outcomes, that the model did not see. Performance on it is a defensible estimate of performance in production, because the sample and the production population are drawn from the same place.
+
+[P11] For a general-purpose system there is no population to name. The input space is everything expressible in language. There is no sample from it in any meaningful statistical sense, because there is no distribution being sampled from. So the benchmarks stand in for it, and a benchmark is a curated set of tasks somebody chose, which measures performance on those tasks and licenses no inference about the rest.
+
+[P12] There is a second problem that makes this worse rather than merely difficult. Benchmarks are public, they are discussed, and the material they are built from ends up in training corpora. Performance on a benchmark that the system has effectively seen is not evidence about performance on anything, and establishing whether contamination occurred is difficult for the developer and close to impossible for anybody else.
+
+[P13] So the honest position is that the two anchors on which the entire regime rests, a stated purpose and a representative validation set, are both weak or absent for these systems. Everything downstream inherits that weakness, and a framework applied conscientiously produces documents that look right and rest on nothing.
+
+[P14] There is a third dependency that breaks and it gets less attention than the other two, which is the assumption that a model's behaviour is stable between validations. A conventional model is a fixed artefact: the same input produces the same output until somebody deploys a change, and change control catches the change.
+
+[P15] These systems are not fixed in that way. The provider updates the model, sometimes on a schedule the deployer does not control and occasionally without a version change the deployer can detect. So a firm can validate a deployment in March and be running a different system in June, having made no change of its own and having no trigger fire.
+
+[P16] The response is contractual and it is worth knowing because it is a live negotiation in every enterprise deal. The deployer asks for version pinning, for notice of material changes, and for the ability to remain on a prior version for a defined period. Whether they get it depends on their size, and a firm that has not asked has accepted an uncontrolled dependency in the middle of a validated process.
+
+[P17] Now what can actually be done, because the answer is not to abandon the regime, and there is a genuine response that firms use.
+
+[P18] The move is to relocate the regime from the model to the application. The general-purpose model is a component. The thing that gets validated is the specific deployment: this model, with this prompt, this retrieval configuration and these guardrails, doing this task, for this population, with this human review step. That has a purpose, it has a population, and you can build a representative evaluation set for it.
+
+[P19] Which means the unit in the inventory is the application rather than the model, and one general-purpose system may sit underneath forty inventory entries, each validated separately for its own use. That is more work and it is the correct amount of work, because forty uses genuinely are forty different risk questions.
+
+[P20] The aviation parallel supports this and gives it a name. Nobody certifies a processor. They certify a system, in an aircraft, performing a function, under conditions. The same component appears in several certified systems and each certification is separate, because the safety question is about the function rather than the part.
+
+[P21] Aviation also handles the novelty problem in a way the model world could learn from. When a design has a feature the regulations did not anticipate, the regulator issues a special condition: a requirement written for that feature, agreed before the work begins, stating what must be demonstrated. Novelty does not mean unregulated. It means the standard has to be constructed, and constructing it is part of the process rather than a reason to skip it.
+
+[P22] The practical version for a firm deploying a general-purpose system is to write its own special conditions, in advance, for the properties the standard framework does not address. What happens when the model is confidently wrong. What happens when a user constructs an input designed to defeat the guardrails. What the system does when it encounters something outside anything it was evaluated on. Those are answerable, they are not answered by an accuracy figure, and writing them down before the evaluation begins is what fixes the target.
+
+[P23] There is a second practical move that follows from relocating the regime to the application, and it changes what the evaluation set is made of. For a conventional model you sample from the population. For an application you assemble cases: the ordinary case, the edge case, the adversarial case, and the case that resembles something the system has failed on before. That is a curated set rather than a sample, and it grows every time something goes wrong.
+
+[P24] Which gives the function a property the statistical version lacks. A regression suite of failures accumulates institutional memory. Every incident becomes a permanent test, so the same failure cannot recur silently, and the set gets more valuable with age rather than less. That is the closest thing to a validation set these systems admit of, and it has to be built rather than sampled.
+
+[P25] It also changes what monitoring means. Monitoring a conventional model means watching a distribution for drift. Monitoring an application means sampling live outputs and having somebody competent read them, which is expensive, is the only thing that detects a class of failures that no metric captures, and is the first item cut when the team is under pressure.
+
+[P26] Now the accountability question, which is where these frameworks are weakest and where the case material tends to live.
+
+[P27] There are at least three parties. Somebody built and trained the model. Somebody deployed it into a product. And somebody used the product to make a decision about a person. In the banking regime these three are the same firm, which is why the guidance can address a single accountable institution.
+
+[P28] Here they are three organisations with three sets of information and no shared view. The developer knows the training data and the evaluation results and does not know how any particular customer uses the system. The deployer knows the use case and cannot inspect the model. The user knows the individual case and is told the system is accurate.
+
+[P29] The regulatory instinct is to split obligations between provider and deployer, and that division is reasonable. Its weakness is the same one we met in week one: the failure lives in the seam. A model that behaves poorly for a population the developer did not evaluate and the deployer did not know to check is nobody's finding, and each party can demonstrate that it met its own obligations.
+
+[P30] So the question to bring to any deployment is not who is responsible in general. It is which party is in a position to detect this specific failure mode, and whether they have any obligation or incentive to look. When the answer is that the party who could see it has no reason to look and the party with the obligation cannot see it, you have found the seam before anything has gone wrong.
+
+[P31] There is a practical consequence for the deploying firm, which is that contractual position and risk position are different things. A deployer can obtain warranties and indemnities from a provider, and those allocate money after a failure. They do not allocate the ability to detect the failure, and they do not move the harm. A firm that has contracted away its liability and retained its exposure has solved the smaller problem.
+
+[P32] Which brings the argument back to the first line, from segment two. The deploying firm owns the risk of the system it deploys, regardless of who built it, in exactly the same way a firm owns the risk of a vendor model. That principle is old, it is well established in the banking regime, and it transfers without modification. The novelty of the technology does not create an exception.
+
+[P33] Let me summarise the position so you can carry it into the case. The frameworks are structurally sound and follow the same skeleton as a regime with decades behind it. They inherit two dependencies that these systems do not satisfy: a stated purpose and a representative validation set. The available response is to validate the application rather than the model, which multiplies the work and gets the unit of analysis right.
+
+[P34] And the accountability split between the party that builds and the party that deploys creates a seam that neither is required to look into, which means the deploying firm should assume the obligation to look regardless of what the framework requires of it, because it is the party in the room when somebody is harmed.
+
+[P35] The last segment takes the two ways this whole regime fails in practice, both of which we have now met in pieces: the role that sits empty, and the role that is occupied by somebody with no authority to stop anything.

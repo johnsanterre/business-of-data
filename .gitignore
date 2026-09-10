@@ -5,3 +5,7 @@ __pycache__/
 materials/w02/audio/01/
 materials/w02/audio/02/
 materials/w02/audio/0*/
+# lecture media lives on YouTube now; the site links it there
+*.mp4
+*.m4a
+materials/w0*/audio/
